@@ -2,15 +2,15 @@
 
 int main()
 {
-    int i = 23;
+    int i = 10;
     
-    if (i % 3 == 0) {
+    if (i%3==0) {
         printf("Love ");
     }
-    if (i % 5 == 0) {
+    if (i%5==0) {
         printf("IU ");
     }
-    if ((i % 3 != 0) && (i % 5 != 0)) {
+    if ((i%3!=0) && (i%5!=0)) {
         printf("%d", i);
     }
 
