@@ -10,7 +10,7 @@ int main()
     if (i%5==0) {
         printf("IU ");
     }
-    if ((i%3!=0) && (i%5!=0)) {
+    if ((i%3!=0)&&(i%5!=0)) {
         printf("%d", i);
     }
 
