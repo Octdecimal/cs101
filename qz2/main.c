@@ -9,15 +9,7 @@ int print_spec(int i) {
 
 
 int print_star(int now) {
-    int star;
-    for(int x=0; x<now; x++) {
-        if(x==0) {
-            star = 1;
-        } else {
-            star = star + 2;
-        }
-    }
-    for(int x=0; x<star; x++) {
+    for(int x=0; x<2*now-1; x++) {
         printf("* ");
     }
 }
