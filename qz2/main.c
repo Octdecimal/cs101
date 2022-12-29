@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int print_spec(int i) {
+int rows = 5;
+void print_spaces(int i) {
     int spec = i;
     for(int x=0; x<spec; x++) {
         printf("  ");
@@ -8,7 +8,7 @@ int print_spec(int i) {
 }
 
 
-int print_star(int now) {
+void print_star(int now) {
     for(int x=0; x<2*now-1; x++) {
         printf("* ");
     }
@@ -16,10 +16,9 @@ int print_star(int now) {
 
 int main()
 {
-    int row = 5;
-    int now = row;
-    for (int i=0; i<row; i++) {
-        print_spec(i);
+    int now = rows;
+    for (int i=0; i<rows; i++) {
+        print_spaces(i);
         print_star(now);
         now--;
         printf("\n");
