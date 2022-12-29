@@ -1,7 +1,7 @@
 #include <stdio.h>
 int rows = 5;
 void print_spaces(int i) {
-    int spec = i;
+    int spaces = i;
     for(int x=0; x<spec; x++) {
         printf("  ");
     }
