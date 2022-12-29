@@ -7,7 +7,8 @@ int print_spec(int i) {
     }
 }
 
-int cont_star(int now) {
+
+int print_star(int now) {
     int star;
     for(int x=0; x<now; x++) {
         if(x==0) {
@@ -16,12 +17,6 @@ int cont_star(int now) {
             star = star + 2;
         }
     }
-    return star;
-}
-
-int print_star(int now) {
-    int star;
-    star = cont_star(now);
     for(int x=0; x<star; x++) {
         printf("* ");
     }
